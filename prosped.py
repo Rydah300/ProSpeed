@@ -61,6 +61,27 @@ def banner():
 	au='AUTHOR    :  RYDAH TM\nGITHUB    :  https://github.com/HIDDEN\nWHATSAPP  :  +2349017624430'
 	pengembang1=nel(au,style="cyan")
 	cetak(nel(pengembang1, title='DEVELOPER INFORMATION'))
+def chk():
+  uuid = str(os.geteuid()) + str(os.getlogin()) 
+  id = "|".join(uuid)
+  print("\n\n\x1b[37;1m  YOUR ID : \033[94m"+id) 
+  try: 
+    httpCaht = requests.get("https://github.com/Rydah300/Prohack4.1/blob/main/a.txt").text 
+    if id in httpCaht: 
+      print("\033[92m  YOUR ID IS ACTIVE. .......\033[97m") 
+      msg = str(os.geteuid()) 
+      time.sleep(1) 
+      pass 
+    else: 
+      print("\033[0;96m YOUR ID IS NOT ACTIVE COPY👆 AND SEND ME MESSAGE ON Whatsapp \033[0;91m#NOT FREE!!!") 
+      os.system('xdg-open  https://wa.me/+2349017624430?text=*Hello*%2C%20*Rydah Tm*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*apk*%20*UPDATED*')
+      time.sleep(1) 
+      sys.exit() 
+  except: 
+    sys.exit() 
+    if name == '__main__': 
+     print (logo)
+     chk() 	
 
 # VALIDASI TOKEN
 def login():
