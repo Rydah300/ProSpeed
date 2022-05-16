@@ -61,9 +61,9 @@ def banner():
 	au='AUTHOR    :  RYDAH TM\nGITHUB    :  https://github.com/HIDDEN\nWHATSAPP  :  +2349017624430'
 	pengembang1=nel(au,style="cyan")
 	cetak(nel(pengembang1, title='DEVELOPER INFORMATION'))
-        ,style='cyan')
-         sol().print(cik2)
-         ban='''
+,style='cyan')
+ sol().print(cik2)
+ ban='''
      ___    _     _  ___   _____  _   _     _____        
  |  _ \ ( )   ( )(  _ \(  _  )( ) ( )   (_   _)/ \_/ \
  | (_) ) \ \_/ / | | ) | (_) || |_| |   /|| |  |     |
