@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/pytho# -*- coding: utf-8 -*-
 
 import requests,bs4,json,os,sys,random,datetime,time,re
 try:
