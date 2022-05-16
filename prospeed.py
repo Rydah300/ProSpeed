@@ -55,25 +55,16 @@ def back():
 # BANNER
 def banner():
 	clear()
-	wel = '# WELCOME TO RYDAH FB CLONER 2022'
+	wel = '#  ____  _  _  ____     __    _   _      ____  __  __ 
+                 (  _ \( \/ )(  _ \   /__\  ( )_( )    (_  _)(  \/  )
+                  )   / \  /  )(_) ) /(  )\  ) _ (       )(   )    ( 
+                 (_)\_) (__) (____/ (__)(__)(_) (_)     (__) (_/\/\_)
+'
 	wel2 = mark(wel, style='cyan')
 	sol().print(wel2)
 	au='AUTHOR    :  RYDAH TM\nGITHUB    :  https://github.com/HIDDEN\nWHATSAPP  :  +2349017624430'
 	pengembang1=nel(au,style="cyan")
 	cetak(nel(pengembang1, title='DEVELOPER INFORMATION'))
-	#  BANNER
-def banner():
-	clear()
-	print("""%s
-	
- 
-\33[1;32m ╔═══╗╔╗  ╔╗╔═══╗╔═══╗╔╗ ╔╗    ╔════╗╔═╗╔═╗
-\33[1;32m ║╔═╗║║╚╗╔╝║╚╗╔╗║║╔═╗║║║ ║║    ║╔╗╔╗║║║╚╝║║
-\33[1;32m ║╚═╝║╚╗╚╝╔╝ ║║║║║║ ║║║╚═╝║    ╚╝║║╚╝║╔╗╔╗║
-\33[1;32m ║╔╗╔╝ ╚╗╔╝  ║║║║║╚═╝║║╔═╗║      ║║  ║║║║║║
-\33[1;32m ║║║╚╗  ║║  ╔╝╚╝║║╔═╗║║║ ║║     ╔╝╚╗ ║║║║║║
-\33[1;32m ╚╝╚═╝  ╚╝  ╚═══╝╚╝ ╚╝╚╝ ╚╝     ╚══╝ ╚╝╚╝╚╝
-\33[1;32m 
 	
 # VALIDASI TOKEN
 def login():
