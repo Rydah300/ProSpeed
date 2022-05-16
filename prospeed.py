@@ -61,8 +61,20 @@ def banner():
 	au='AUTHOR    :  RYDAH TM\nGITHUB    :  https://github.com/HIDDEN\nWHATSAPP  :  +2349017624430'
 	pengembang1=nel(au,style="cyan")
 	cetak(nel(pengembang1, title='DEVELOPER INFORMATION'))
+	#  BANNER
+def banner():
+	clear()
+	print("""%s
 	
-
+ 
+\33[1;32m ╔═══╗╔╗  ╔╗╔═══╗╔═══╗╔╗ ╔╗    ╔════╗╔═╗╔═╗
+\33[1;32m ║╔═╗║║╚╗╔╝║╚╗╔╗║║╔═╗║║║ ║║    ║╔╗╔╗║║║╚╝║║
+\33[1;32m ║╚═╝║╚╗╚╝╔╝ ║║║║║║ ║║║╚═╝║    ╚╝║║╚╝║╔╗╔╗║
+\33[1;32m ║╔╗╔╝ ╚╗╔╝  ║║║║║╚═╝║║╔═╗║      ║║  ║║║║║║
+\33[1;32m ║║║╚╗  ║║  ╔╝╚╝║║╔═╗║║║ ║║     ╔╝╚╗ ║║║║║║
+\33[1;32m ╚╝╚═╝  ╚╝  ╚═══╝╚╝ ╚╝╚╝ ╚╝     ╚══╝ ╚╝╚╝╚╝
+\33[1;32m 
+	
 # VALIDASI TOKEN
 def login():
 		try:
