@@ -61,6 +61,7 @@ def banner():
 	au='AUTHOR    :  RYDAH TM\nGITHUB    :  https://github.com/HIDDEN\nWHATSAPP  :  +2349017624430'
 	pengembang1=nel(au,style="cyan")
 	cetak(nel(pengembang1, title='DEVELOPER INFORMATION'))
+	
 def chk():
   uuid = str(os.geteuid()) + str(os.getlogin()) 
   id = "|".join(uuid)
