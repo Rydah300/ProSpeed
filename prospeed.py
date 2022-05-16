@@ -59,21 +59,17 @@ def banner():
 	wel2 = mark(wel, style='cyan')
 	sol().print(wel2)
 	au='AUTHOR    :  RYDAH TM\nGITHUB    :  https://github.com/HIDDEN\nWHATSAPP  :  +2349017624430'
+	  ___    _     _  ___   _____  _   _     _____        
+         |  _ \ ( )   ( )(  _ \(  _  )( ) ( )   (_   _)/ \_/ \
+         | (_) ) \ \_/ / | | ) | (_) || |_| |   /|| |  |     |
+         |    /    \ /   | | | )  _  )|  _  |  (_)| |  | (_) |
+         | |\ \    | |   | |_) | | | || | | |     | |  | | | |
+         (_) (_)   (_)   (____/(_) (_)(_) (_)     ( )  (_) (_)
+                                          /(          
+                                         (__)   VERSION 2.0.0      
+
 	pengembang1=nel(au,style="cyan")
 	cetak(nel(pengembang1, title='DEVELOPER INFORMATION'))
-,style='cyan')
- sol().print(cik2)
- ban='''
-     ___    _     _  ___   _____  _   _     _____        
- |  _ \ ( )   ( )(  _ \(  _  )( ) ( )   (_   _)/ \_/ \
- | (_) ) \ \_/ / | | ) | (_) || |_| |   /|| |  |     |
- |    /    \ /   | | | )  _  )|  _  |  (_)| |  | (_) |
- | |\ \    | |   | |_) | | | || | | |     | |  | | | |
- (_) (_)   (_)   (____/(_) (_)(_) (_)     ( )  (_) (_)
-                                          /(          
-                                         (__)  VERSION 2.0.0
-                                         
-  oi = nel(tekz(ban,justify='center',style='bold'), style='cyan')
 
 # VALIDASI TOKEN
 def login():
